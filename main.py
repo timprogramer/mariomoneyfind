@@ -18,4 +18,19 @@ wrap.sprite.add("mario-items",randomx,randomy,"star")
 pyt=math.sqrt((randomx-60)**2+(randomy-60)**2)
 pyt1shag=pyt/3
 wrap.actions.move_at_angle_point(0,randomx,randomy,pyt1shag)
-wrap.sprite.add("mario-items",pyt1shag+60,pyt1shag+50,"coin")
+marioposx=wrap.sprite.get_centerx(0)
+marioposy=wrap.sprite.get_centery(0)
+wrap.sprite.add("mario-items",marioposx,marioposy+70,"coin")
+
+#движение 2
+wrap.actions.move_at_angle_point(0,randomx,randomy,pyt1shag)
+marioposx=wrap.sprite.get_centerx(0)
+marioposy=wrap.sprite.get_centery(0)
+wrap.sprite.add("mario-items",marioposx,marioposy+70,"coin")
+
+#движение 3
+wrap.actions.move_at_angle_point(0,randomx,randomy,pyt1shag)
+marioposx=wrap.sprite.get_centerx(0)
+marioposy=wrap.sprite.get_centery(0)
+wrap.sprite.add("mario-items",marioposx,marioposy+70,"coin")
+wrap.sprite.remove(1)
